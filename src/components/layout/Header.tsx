@@ -7,7 +7,8 @@ import {
   Menu, 
   X, 
   Search, 
-  LogIn 
+  LogIn,
+  Settings
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -63,6 +64,11 @@ const Header = () => {
               </Link>
             )}
             
+            {/* Admin Link */}
+            <Link to="/admin" className="text-brand-dark hover:text-brand-purple">
+              <Settings size={20} />
+            </Link>
+            
             {/* Mobile Menu Button */}
             <button 
               className="md:hidden text-brand-dark hover:text-brand-purple" 
@@ -104,6 +110,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 צור קשר
+              </Link>
+              <Link 
+                to="/admin" 
+                className="text-brand-dark hover:text-brand-purple transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                ניהול
               </Link>
               {!isLoggedIn && (
                 <div className="pt-2">
