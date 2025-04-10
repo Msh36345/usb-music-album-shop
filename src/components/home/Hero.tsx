@@ -6,26 +6,26 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <div className="relative overflow-hidden bg-gradient-to-b from-brand-purple/95 to-brand-purple">
-      <div className="container-custom py-16 md:py-24">
+      <div className="container-custom py-20 md:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-white order-2 md:order-1 animate-fade-in">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              מוזיקה איכותית על התקן USB
+              יצירה מוזיקלית ייחודית בפורמט מעוצב
             </h1>
             <p className="text-xl mb-6 text-white/90">
               קבלו אוסף אלבומים שלם של האמן במהדורות מיוחדות
-              על גבי התקן USB איכותי בעיצוב ייחודי.
+              על גבי התקן USB איכותי בעיצוב ייחודי. חוויה מוזיקלית שלא תשכחו.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-brand-gold text-brand-dark hover:bg-opacity-90">
                 <Link to="/products">
-                  גלה את המוצרים
+                  גלה את האוספים
                   <ArrowLeft className="mr-2 rtl:rotate-180" size={18} />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link to="/about">
-                  קרא עוד
+                  על האמן
                 </Link>
               </Button>
             </div>
